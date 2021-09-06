@@ -1,0 +1,134 @@
+                                      /* ---------------navbar styling---- */
+.navbar{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.navbar-brand{
+    color: salmon;
+}
+.navbar-brand:hover{
+    color: slategray;
+}
+.navbar-nav{
+    border-radius: 8px;
+    box-shadow: white;
+    background: #261C2C;
+    margin-left: auto;
+}
+/* Remove border from toggler */
+.navbar-toggler {
+    border: 0;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+/* Lines of the Toggler */
+.toggler-icon{
+    width: 30px;
+    height: 3px;
+    background-color: #e74c3c;
+
+    display: block;
+    transition: all 0.2s;
+}
+
+/* Adds Space between the lines */
+.middle-bar{
+    margin: 5px auto;
+}
+
+/* State when navbar is opened (START) */
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+/* State when navbar is opened (END) */
+
+/* State when navbar is collapsed (START) */
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+/* State when navbar is collapsed (END) */
+
+/* Color of Toggler when collapsed */
+.navbar-toggler.collapsed .toggler-icon {
+    background-color: #E1D89F;
+}
+
+.nav-item{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+     padding-right: 40px;
+     text-align: center;
+    
+}
+.nav-item a {
+    text-decoration: none;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    display: inline-block;
+} 
+
+ .nav-item a:hover{
+    color: red;
+}
+
+.dropdown-menu a{
+    text-decoration: none;
+    font-weight: 200;
+    color: white;
+    background: black;
+}
+.dropdown-menu a:hover{
+    color: #BD4B4B;
+} 
+.nav-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: width .3s;
+}
+.nav-link:hover::after{
+    width: 100%;
+    transition: width .5s;
+    background: #fff;
+}
+  /* /* ------------------navbar ends----------------------------------- */
+  .carousel-caption h2{
+    font-family: 'Kaushan Script', cursive;
+        font-weight: lighter;
+  }
+  .carousel-caption p{
+    font-size: x-large;
+    font-family: 'Ubuntu', sans-serif;
+  }
+          /* ------------------about starts------------------- */
